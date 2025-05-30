@@ -5,4 +5,4 @@ enableCORS = false
 iframeAllow = true
 
 [theme]
-base = "light"
+base = "dark"
