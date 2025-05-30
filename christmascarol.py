@@ -5,7 +5,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-df = pd.read_csv("data/output/christmas_tracks.csv")
+df = pd.read_csv("christmas_tracks.csv")
 
 # Build a TF-IDF matrix on titles
 tfidf = TfidfVectorizer(stop_words="english")
