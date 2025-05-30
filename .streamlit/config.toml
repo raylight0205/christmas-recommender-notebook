@@ -3,3 +3,6 @@ enableCORS = false
 
 [browser]
 iframeAllow = true
+
+[theme]
+base = "light"
