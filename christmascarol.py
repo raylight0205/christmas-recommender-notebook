@@ -32,14 +32,14 @@ for i, score in scores:
     row = df.iloc[i]
     st.write(f"**{row.title}** by *{row.artist}*  —  similarity {score:.2f}")
 
-    # Embed the full Spotify player for each track
+    # Embed full Spotify player for each track
     track_id = row['id']
-    embed = (
-        f"https://open.spotify.com/embed/track/{track_id}"
-    )
-    st.markdown(
-        f"<iframe src='{embed}' width='300' height='80' "
-        "frameborder='0' allow='encrypted-media'></iframe>",
-        unsafe_allow_html=True
+    # Use Components API to embed the Spotify Player
+    embed_url = f"https://open.spotify.com/embed/track/{track_id}"
+    components.iframe(
+        src=embed_url,
+        width=300,
+        height=80,
+        scrolling=False
     )
     
