@@ -3,4 +3,4 @@ enableCORS = false
 enableXsrfProtection = false
 
 [theme]
-base = "light"
+base = "dark"
