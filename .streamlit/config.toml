@@ -1,8 +1,6 @@
 [server]
 enableCORS = false
-
-[browser]
-iframeAllow = true
+enableXsrfProtection = false
 
 [theme]
 base = "dark"
