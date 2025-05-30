@@ -1,7 +1,5 @@
 [server]
-# Allow the app to be embedded in an iframe
 enableCORS = false
 
 [browser]
-#Permit iframe embedding
 iframeAllow = true
